@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Timer from './components/Timer';
+import MyCalculator from './components/MyCalculator';
+import Bulb from './components/Bulb';
+import LocalStorage from './components/LocalStorage';
+import Testing from './components/Testing';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <>
+    <div id="container">
+      <Testing />
+    <LocalStorage />
+      <Timer />
+      <MyCalculator />
+      <Bulb/>
+      
     </div>
+  </>
   );
 }
 
